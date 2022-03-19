@@ -89,7 +89,7 @@ public class AtomVelocity {
     }
 
     public Optional<RegisteredServer> bestServer(List<RegisteredServer> listToChoose) {
-        return listToChoose.stream().min(Comparator.comparingInt(s -> s.getPlayersConnected().size()));
+        return listToChoose.stream().filter(s -> s.getPlayersConnected().size() < 100).max(Comparator.comparingInt(s -> s.getPlayersConnected().size()));
     }
 
     public static AtomVelocity getInstance() {
