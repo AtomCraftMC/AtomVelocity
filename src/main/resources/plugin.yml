@@ -1,0 +1,5 @@
+name: AtomVelocityConnector
+description: AtomCraft Velocity Connector Platform
+author: Alijk
+main: ir.alijk.atomvelocityconnector.AtomVelocityConnector
+version: 1.0.0
